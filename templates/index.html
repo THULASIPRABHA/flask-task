@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+<style>
+      body {
+        background-image: url("/static/bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+	  .header img{
+	  float:left;
+	  width:200px;
+	  heigth:200px;
+	  background:#555
+	  }
+	  .header h1 {
+		position: relative;
+		top: 18px;
+		left: 10px;
+	}
+	h1 {
+	text-shadow: 6px 6px #ff00ff;
+	}
+	#imgcontainer { float:left }
+	marquee { width:80% }
+    </style>
+</head>
+<title>Python Assesment</title>
+<body >
+<div class = "header">
+<div id="imgcontainer"><img src="/static/logo.jpg"/></div>
+<marquee behavior="alternate"  scrollamount="15"><h1 style="text-align:center; font-size:50px; font-family: 'Redressed', cursive;">THULASI ASSESMENT </h1>
+</marquee>
+</div>
+<br>
+<br>
+<br>
+<form   method="post" >      
+	<label  for="userinput" style="font-size:40px; font-family:poppins; text-align:left;"> Enter your text: </label><br>
+	<textarea id="userinput" name="userinput" rows="8" cols="80"></textarea><br>
+	
+	<button type="submit" name="WordCount" value=" WordCount" title="Click here to validate" style="width:100px ; height:50px; font-size:14px;"  />WordCount</button>
+	<button type="submit" name="title1" value=" title1" title="Click here to validate" style="width:100px ; height:50px; font-size:14px;"  />Titleinput</button>
+	<button type="submit" name="unique" value=" unique" title="Click here to validate" style="width:100px ; height:50px; font-size:14px;"  />Unique</button>
+</form>
+
+<label for="result" style="font-size:40px";>output:</label><br>
+    <textarea id="result" name="result" rows="8" cols="80" value="hi">{{output}}</textarea>
+</body>
+</html>
