@@ -20,7 +20,7 @@ def func():
            for word in list_str:
                if word not in unique_words:
                    unique_words.append(word)
-            output=unique_words
+           output=unique_words
         
     return render_template("index.html", output=output)
 
